@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Peter Platou — Fotograf i Nuuk</title>
+    <meta
+      name="description"
+      content="Peter Platou er fotograf i Nuuk, Grønland. Portræt, familie, landskab og natur. Book en session."
+    />
+    <meta name="theme-color" content="#e7e2d8" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#arbejde">Til indhold</a>
+    <header class="site-header">
+      <a class="wordmark" href="#top">Peter Platou</a>
+      <nav class="nav" id="nav">
+        <a href="#arbejde" data-i18n="nav.work">Arbejde</a>
+        <a href="#ydelser" data-i18n="nav.services">Ydelser</a>
+        <a href="#om" data-i18n="nav.about">Om</a>
+        <a href="#kontakt" data-i18n="nav.contact">Kontakt</a>
+      </nav>
+      <div class="header-tools">
+        <div class="lang" role="group" aria-label="Sprog">
+          <button type="button" data-lang="da" aria-pressed="true">DA</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+        <a class="book" href="#kontakt"><span data-i18n="nav.book">Book</span></a>
+        <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav" data-i18n="menu">
+          Menu
+        </button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <img
+          class="hero-img"
+          src="images/32691039.jpg"
+          alt="Gul båd mellem klipper på kysten ved Nuuk"
+          width="4700"
+          height="3133"
+        />
+        <div class="hero-shade"></div>
+        <div class="hero-copy">
+          <p class="kicker" data-i18n="hero.kicker">Fotograf i Nuuk</p>
+          <h1>Peter Platou</h1>
+          <p class="lede" data-i18n="hero.lede">
+            Landskab, portræt og familie. Jeg arbejder i Grønland, med base i Nuuk.
+          </p>
+          <div class="hero-actions">
+            <a class="btn solid" href="#arbejde" data-i18n="hero.work">Se arbejdet</a>
+            <a class="btn ghost" href="#kontakt" data-i18n="hero.book">Book en session</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="statement">
+        <p data-i18n="statement">
+          Jeg fotograferer mennesker og steder i Grønland. Sessionerne er rolige, aftalerne er klare, og du går herfra med billeder, der er færdige at bruge.
+        </p>
+        <ul class="facts">
+          <li><span data-i18n="fact.base">Base</span> Nuuk</li>
+          <li>
+            <span data-i18n="fact.workLabel">Arbejde</span>
+            <span data-i18n="fact.work">Portræt til landskab</span>
+          </li>
+          <li>
+            <span data-i18n="fact.archive">Arkiv</span>
+            <span data-i18n="fact.views">Set over 7 mio. gange</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="work" id="arbejde">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Portfolio</p>
+            <h2 data-i18n="work.title">Udvalgt arbejde</h2>
+          </div>
+          <div class="filters" role="group" aria-label="Filtrér billeder">
+            <button type="button" data-filter="alle" aria-pressed="true" data-i18n="filter.all">Alle</button>
+            <button type="button" data-filter="portraet" aria-pressed="false" data-i18n="filter.portrait">Portræt</button>
+            <button type="button" data-filter="familie" aria-pressed="false" data-i18n="filter.family">Familie</button>
+            <button type="button" data-filter="natur" aria-pressed="false" data-i18n="filter.nature">Natur</button>
+            <button type="button" data-filter="nuuk" aria-pressed="false" data-i18n="filter.nuuk">Nuuk</button>
+          </div>
+        </div>
+        <div class="gallery">
+          <figure data-cat="portraet">
+            <button class="shot" type="button">
+              <img src="images/35291736.jpg" alt="Mand i vinterjakke ser op i koldt lys" width="3996" height="3996" loading="lazy" />
+            </button>
+            <figcaption><span data-i18n="cap.winter">Vinterportræt</span><span>Nuuk</span></figcaption>
+          </figure>
+          <figure data-cat="natur">
+            <button class="shot" type="button">
+              <img src="images/37150661.jpg" alt="To havørne foran sneklædte fjelde" width="2983" height="1678" loading="lazy" />
+            </button>
+            <figcaption><span data-i18n="cap.eagles">To havørne</span><span>Nuuk</span></figcaption>
+          </figure>
+          <figure data-cat="portraet">
+            <button class="shot" type="button">
+              <img src="images/35499370.jpg" alt="Portræt af kvinde i mørk uld, varmt lys" width="4000" height="6000" loading="lazy" />
+            </button>
+            <figcaption><span data-i18n="cap.scarf">Portræt</span><span>Nuuk</span></figcaption>
+          </figure>
+          <figure data-cat="nuuk">
+            <button class="shot" type="button">
+              <img src="images/32691039.jpg" alt="Gul båd sejler mellem klipper ved Nuuk" width="4700" height="3133" loading="lazy" />
+            </button>
+            <figcaption><span data-i18n="cap.coast">Kysten</span><span>Nuuk</span></figcaption>
+          </figure>
+          <figure data-cat="familie">
+            <button class="shot" type="button">
+              <img src="images/39240665.jpg" alt="Far sidder med sit barn på skødet" width="2946" height="4419" loading="lazy" />
+            </button>
+            <figcaption><span data-i18n="cap.father">Far og barn</span><span>Nuuk</span></figcaption>
+          </figure>
+          <figure data-cat="natur">
+            <button class="shot" type="button">
+              <img src="images/39452802.jpg" alt="Havørn flyver lavt over havet" width="2953" height="1661" loading="lazy" />
+            </button>
+            <figcaption><span data-i18n="cap.sea">Over havet</span><span>Nuuk</span></figcaption>
+          </figure>
+          <figure data-cat="portraet">
+            <button class="shot" type="button">
+              <img src="images/35689887.jpg" alt="Portræt i aftenlys, kvinde i mørk bluse" width="4000" height="4000" loading="lazy" />
+            </button>
+            <figcaption><span data-i18n="cap.evening">Aftenlys</span><span>Nuuk</span></figcaption>
+          </figure>
+          <figure data-cat="nuuk">
+            <button class="shot" type="button">
+              <img src="images/35713547.jpg" alt="Person svøbt i Grønlands flag på en sneklædt gade i Nuuk" width="4000" height="6000" loading="lazy" />
+            </button>
+            <figcaption><span data-i18n="cap.street">Vintergade</span><span>Nuuk</span></figcaption>
+          </figure>
+          <figure data-cat="familie">
+            <button class="shot" type="button">
+              <img src="images/39607619.jpg" alt="Mor kysser sit barn på kinden" width="7008" height="3942" loading="lazy" />
+            </button>
+            <figcaption><span data-i18n="cap.mother">Mor og barn</span><span>Nuuk</span></figcaption>
+          </figure>
+          <figure data-cat="natur">
+            <button class="shot" type="button">
+              <img src="images/37213515.jpg" alt="Nærbillede af en havørn i profil" width="4230" height="2820" loading="lazy" />
+            </button>
+            <figcaption><span data-i18n="cap.close">Nærbillede</span><span>Nuuk</span></figcaption>
+          </figure>
+          <figure data-cat="familie">
+            <button class="shot" type="button">
+              <img src="images/39866768.jpg" alt="Barn ligger på maven på en seng og ser op" width="5928" height="3334" loading="lazy" />
+            </button>
+            <figcaption><span data-i18n="cap.home">Hjemme</span><span>Nuuk</span></figcaption>
+          </figure>
+          <figure data-cat="nuuk">
+            <button class="shot" type="button">
+              <img src="images/32655135.jpg" alt="Løber på en bane med røde huse i Nuuk bagved" width="3528" height="5292" loading="lazy" />
+            </button>
+            <figcaption><span data-i18n="cap.run">I bevægelse</span><span>Nuuk</span></figcaption>
+          </figure>
+          <figure data-cat="portraet">
+            <button class="shot" type="button">
+              <img src="images/35490806.jpg" alt="Sort-hvidt portræt af en smilende mand med briller" width="4000" height="4000" loading="lazy" />
+            </button>
+            <figcaption><span data-i18n="cap.bw">Sort-hvid</span><span>Nuuk</span></figcaption>
+          </figure>
+          <figure data-cat="natur">
+            <button class="shot" type="button">
+              <img src="images/39110099.jpg" alt="Snespurv står på en klippe med et frø i næbbet" width="3166" height="1781" loading="lazy" />
+            </button>
+            <figcaption><span data-i18n="cap.bird">Snespurv</span><span>Nuuk</span></figcaption>
+          </figure>
+          <figure data-cat="portraet">
+            <button class="shot" type="button">
+              <img src="images/37389146.jpg" alt="Kvinde sidder i en café og kigger ud i lyset" width="6000" height="4000" loading="lazy" />
+            </button>
+            <figcaption><span data-i18n="cap.cafe">I caféen</span><span>Nuuk</span></figcaption>
+          </figure>
+          <figure data-cat="natur">
+            <button class="shot" type="button">
+              <img src="images/35713618.jpg" alt="Våd husky står på iset underlag" width="2909" height="4364" loading="lazy" />
+            </button>
+            <figcaption><span data-i18n="cap.ice">På isen</span><span>Nuuk</span></figcaption>
+          </figure>
+          <figure data-cat="portraet">
+            <button class="shot" type="button">
+              <img src="images/39628118.jpg" alt="Nærbillede af en mand i grøn trøje" width="7008" height="4672" loading="lazy" />
+            </button>
+            <figcaption><span data-i18n="cap.face">Portræt</span><span>Nuuk</span></figcaption>
+          </figure>
+          <figure data-cat="natur">
+            <button class="shot" type="button">
+              <img src="images/37017310.jpg" alt="Ravn flyver over blåt vand" width="2946" height="2039" loading="lazy" />
+            </button>
+            <figcaption><span data-i18n="cap.raven">Ravn</span><span>Nuuk</span></figcaption>
+          </figure>
+          <figure data-cat="portraet">
+            <button class="shot" type="button">
+              <img src="images/39452749.jpg" alt="Kvinde i gråt cardigan sidder i sommergrønt" width="6520" height="3667" loading="lazy" />
+            </button>
+            <figcaption><span data-i18n="cap.summer">Sommerlys</span><span>Nuuk</span></figcaption>
+          </figure>
+          <figure data-cat="portraet">
+            <button class="shot" type="button">
+              <img src="images/35336322.jpg" alt="Kvinde i vinterjakke smiler i blå time" width="6000" height="4000" loading="lazy" />
+            </button>
+            <figcaption><span data-i18n="cap.blue">Blå time</span><span>Nuuk</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="break">
+        <img src="images/36990934.jpg" alt="Havørn flyver over stille vand" width="9616" height="5409" loading="lazy" />
+        <p data-i18n="cap.break">Havørn over vandet. Nuuk.</p>
+      </section>
+
+      <section class="services" id="ydelser">
+        <p class="eyebrow" data-i18n="services.kicker">Til kunder</p>
+        <h2 data-i18n="services.title">Det jeg fotograferer</h2>
+        <div class="service-grid">
+          <article class="service">
+            <span class="num">01</span>
+            <h3 data-i18n="svc.portrait">Portræt</h3>
+            <p data-i18n="svc.portraitBody">
+              Enkeltpersoner, par og billeder til arbejde. Vi finder et roligt sted i Nuuk, og du får fotografier, der ligner dig.
+            </p>
+          </article>
+          <article class="service">
+            <span class="num">02</span>
+            <h3 data-i18n="svc.family">Familie</h3>
+            <p data-i18n="svc.familyBody">
+              Hjemme, ude eller med den mindste. Jeg arbejder stille, så øjeblikket kan være, som det er.
+            </p>
+          </article>
+          <article class="service">
+            <span class="num">03</span>
+            <h3 data-i18n="svc.nature">Landskab og natur</h3>
+            <p data-i18n="svc.natureBody">
+              Kyst, fjelde, fugle og årstidernes lys. Til print, til dig selv, eller til en opgave.
+            </p>
+          </article>
+          <article class="service">
+            <span class="num">04</span>
+            <h3 data-i18n="svc.business">Erhverv</h3>
+            <p data-i18n="svc.businessBody">
+              Portrætter, arbejdspladser og små begivenheder for virksomheder i Nuuk. En klar aftale, og filer der er klar til brug.
+            </p>
+          </article>
+        </div>
+        <div class="steps">
+          <article>
+            <span>01</span>
+            <h3 data-i18n="step.1">Skriv</h3>
+            <p data-i18n="step.1b">Fortæl kort hvad du skal bruge, og cirka hvornår.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3 data-i18n="step.2">Aftale</h3>
+            <p data-i18n="step.2b">Vi finder sted, lys og hvor lang tid der skal bruges.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3 data-i18n="step.3">Optagelse</h3>
+            <p data-i18n="step.3b">Roligt tempo. Ikke mere instruktion, end billedet har brug for.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3 data-i18n="step.4">Levering</h3>
+            <p data-i18n="step.4b">Et redigeret sæt, klar til print og deling.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="about" id="om">
+        <img src="images/37150661.jpg" alt="Havørne foran sneklædte fjelde ved Nuuk" width="2983" height="1678" loading="lazy" />
+        <div>
+          <p class="eyebrow" data-i18n="about.kicker">Fotografen</p>
+          <h2 data-i18n="about.title">Base i Nuuk</h2>
+          <p data-i18n="about.1">
+            Jeg hedder Peter Platou. Jeg bor i Nuuk og fotograferer det, der er tæt på: mennesker, familier, havørne og kysten.
+          </p>
+          <p class="quiet" data-i18n="about.2">
+            Billederne på siden er et udvalg. Det samme blik tager jeg med til en opgave. Prisen følger tiden, stedet og hvad billederne skal bruges til.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact" id="kontakt">
+        <div class="contact-aside">
+          <p class="eyebrow" data-i18n="contact.kicker">Booking</p>
+          <h2 data-i18n="contact.title">Skriv til mig</h2>
+          <p data-i18n="contact.lead">
+            Til en session, et print, eller et billede du vil bruge. Formularen åbner i din mail, så beskeden kommer direkte fra dig.
+          </p>
+          <div class="place">
+            <strong>Nuuk, Grønland</strong>
+            <!-- Skift mailadressen til Peters rigtige -->
+            <a id="contact-email" href="mailto:kontakt@peterplatou.gl">kontakt@peterplatou.gl</a>
+            <p data-i18n="contact.place">Sessioner efter aftale</p>
+          </div>
+        </div>
+        <form id="book" novalidate>
+          <label>
+            <span data-i18n="form.name">Navn</span>
+            <input name="name" autocomplete="name" required />
+          </label>
+          <label>
+            <span data-i18n="form.email">E-mail</span>
+            <input name="email" type="email" autocomplete="email" required />
+          </label>
+          <label>
+            <span data-i18n="form.phone">Telefon, valgfri</span>
+            <input name="phone" type="tel" autocomplete="tel" />
+          </label>
+          <label>
+            <span data-i18n="form.service">Hvad drejer det sig om?</span>
+            <select name="service">
+              <option value="" data-i18n="opt.choose">Vælg</option>
+              <option data-i18n="opt.portrait">Portræt</option>
+              <option data-i18n="opt.family">Familie</option>
+              <option data-i18n="opt.nature">Landskab / natur</option>
+              <option data-i18n="opt.business">Erhverv</option>
+              <option data-i18n="opt.event">Begivenhed</option>
+              <option data-i18n="opt.other">Noget andet</option>
+            </select>
+          </label>
+          <label>
+            <span data-i18n="form.when">Hvornår, valgfri</span>
+            <input name="when" data-i18n-placeholder="ph.when" placeholder="En periode eller en dato" />
+          </label>
+          <label class="wide">
+            <span data-i18n="form.message">Besked</span>
+            <textarea name="message" required data-i18n-placeholder="ph.message" placeholder="Sted, hvor mange I er, og hvad billederne skal bruges til."></textarea>
+          </label>
+          <button class="btn red" type="submit" data-i18n="form.send">Send forespørgsel</button>
+          <p class="form-note" role="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Peter Platou · <span data-i18n="footer">Fotograf i Nuuk, Grønland</span></span>
+      <a href="https://www.pexels.com/@thebigplanet/" data-i18n="footer.archive">Arkiv på Pexels</a>
+    </footer>
+
+    <dialog id="lightbox" aria-label="Billede">
+      <div class="lb-top">
+        <p class="lb-cap"></p>
+        <div class="lb-actions">
+          <button type="button" data-dir="-1" data-i18n="lb.prev">Forrige</button>
+          <button type="button" data-dir="1" data-i18n="lb.next">Næste</button>
+          <button class="lb-close" type="button" data-i18n="lb.close">Luk</button>
+        </div>
+      </div>
+      <img alt="" />
+    </dialog>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
