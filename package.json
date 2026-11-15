@@ -1,0 +1,7 @@
+{
+  "name": "peter-platou-photography",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  }
+}

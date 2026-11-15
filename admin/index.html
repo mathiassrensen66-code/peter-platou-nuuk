@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Admin · Peter Platou</title>
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body>
+    <main id="login-view" class="login">
+      <form id="login-form">
+        <p class="eyebrow">Peter Platou</p>
+        <h1>Log ind</h1>
+        <p class="lead">Her skifter du tekster og billeder på fotografsiden.</p>
+        <label>
+          Brugernavn
+          <input name="username" autocomplete="username" required value="admin" />
+        </label>
+        <label>
+          Adgangskode
+          <input name="password" type="password" autocomplete="current-password" required />
+        </label>
+        <button class="btn" type="submit">Log ind</button>
+        <p class="note" id="login-note" role="status"></p>
+      </form>
+    </main>
+
+    <div id="app-view" hidden>
+      <header class="bar">
+        <a class="brand" href="../">Peter Platou</a>
+        <nav class="tabs" role="tablist">
+          <button type="button" data-tab="text" aria-selected="true">Tekst</button>
+          <button type="button" data-tab="photos" aria-selected="false">Billeder</button>
+          <button type="button" data-tab="account" aria-selected="false">Adgangskode</button>
+        </nav>
+        <div class="bar-actions">
+          <a href="../">Se siden</a>
+          <button type="button" id="logout">Log ud</button>
+        </div>
+      </header>
+
+      <section id="panel-text" class="panel"></section>
+
+      <section id="panel-photos" class="panel" hidden>
+        <div id="slots"></div>
+        <div class="panel-head">
+          <h2>Galleri</h2>
+          <button type="button" class="btn ghost" id="add-photo">Tilføj billede</button>
+        </div>
+        <div id="gallery-editor" class="cards"></div>
+      </section>
+
+      <section id="panel-account" class="panel narrow" hidden>
+        <h2>Skift adgangskode</h2>
+        <form id="password-form">
+          <label>
+            Nuværende adgangskode
+            <input name="current" type="password" autocomplete="current-password" required />
+          </label>
+          <label>
+            Ny adgangskode
+            <input name="next" type="password" autocomplete="new-password" minlength="8" required />
+          </label>
+          <button class="btn" type="submit">Gem adgangskode</button>
+          <p class="note" id="password-note" role="status"></p>
+        </form>
+      </section>
+
+      <div class="savebar">
+        <p id="save-note" role="status"></p>
+        <button type="button" class="btn ghost" id="save">Gem</button>
+        <button type="button" class="btn" id="publish">Gem og udgiv</button>
+      </div>
+    </div>
+    <script src="admin.js"></script>
+  </body>
+</html>

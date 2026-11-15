@@ -107,7 +107,21 @@ const header = document.querySelector(".site-header");
 const menuBtn = document.querySelector(".menu-btn");
 const nav = document.querySelector(".nav");
 const filters = document.querySelector(".filters");
-const figures = [...document.querySelectorAll(".gallery figure")];
+let content = null;
+
+function galleryFigures() {
+  return [...document.querySelectorAll(".gallery figure")];
+}
+
+function esc(value) {
+  return String(value ?? "").replace(/[&<>"']/g, (char) => ({
+    "&": "&amp;",
+    "<": "&lt;",
+    ">": "&gt;",
+    '"': "&quot;",
+    "'": "&#39;"
+  }[char]));
+}
 const dialog = document.querySelector("#lightbox");
 const lbImg = dialog.querySelector("img");
 const lbCap = dialog.querySelector(".lb-cap");
@@ -124,12 +138,18 @@ function applyLang(next) {
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     if (!el.dataset.da) el.dataset.da = el.textContent.trim();
     const key = el.dataset.i18n;
-    el.textContent = lang === "en" ? en[key] || el.dataset.da : el.dataset.da;
+    el.textContent = lang === "en" ? el.dataset.en || en[key] || el.dataset.da : el.dataset.da;
   });
   document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
     if (!el.dataset.daPlaceholder) el.dataset.daPlaceholder = el.placeholder;
     const key = el.dataset.i18nPlaceholder;
-    el.placeholder = lang === "en" ? en[key] || el.dataset.daPlaceholder : el.dataset.daPlaceholder;
+    el.placeholder = lang === "en" ? el.dataset.enPlaceholder || en[key] || el.dataset.daPlaceholder : el.dataset.daPlaceholder;
+  });
+  document.querySelectorAll(".cap-label").forEach((el) => {
+    el.textContent = lang === "en" ? el.dataset.en : el.dataset.da;
+  });
+  document.querySelectorAll(".hero-img, .about img, .break img, .gallery img").forEach((img) => {
+    if (img.dataset.da) img.alt = lang === "en" ? img.dataset.en : img.dataset.da;
   });
   document.querySelectorAll(".lang button").forEach((btn) => {
     btn.setAttribute("aria-pressed", String(btn.dataset.lang === lang));
@@ -164,13 +184,13 @@ filters.addEventListener("click", (event) => {
     item.setAttribute("aria-pressed", String(item === btn));
   });
   const cat = btn.dataset.filter;
-  figures.forEach((figure) => {
+  galleryFigures().forEach((figure) => {
     figure.hidden = cat !== "alle" && figure.dataset.cat !== cat;
   });
 });
 
 function current() {
-  return figures.filter((figure) => !figure.hidden);
+  return galleryFigures().filter((figure) => !figure.hidden);
 }
 
 function show(nextIndex) {
@@ -228,19 +248,20 @@ form.addEventListener("submit", (event) => {
   const message = String(data.get("message") || "").trim();
   note.classList.remove("is-error");
 
+  const phrase = (key, fallback) => content?.text?.[key]?.[lang] || fallback;
   if (!name || !email || !message) {
-    note.textContent = lang === "en" ? en["err.required"] : "Skriv navn, e-mail og en kort besked.";
+    note.textContent = phrase("err.required", lang === "en" ? en["err.required"] : "Skriv navn, e-mail og en kort besked.");
     note.classList.add("is-error");
     return;
   }
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    note.textContent = lang === "en" ? en["err.email"] : "E-mailadressen ser ufuldstændig ud.";
+    note.textContent = phrase("err.email", lang === "en" ? en["err.email"] : "E-mailadressen ser ufuldstændig ud.");
     note.classList.add("is-error");
     return;
   }
 
   const to = document.querySelector("#contact-email").href.replace("mailto:", "");
-  const subject = lang === "en" ? enMail.subject : daMail.subject;
+  const subject = phrase("mail.subject", lang === "en" ? enMail.subject : daMail.subject);
   const body = [
     lang === "en" ? `Name: ${name}` : `Navn: ${name}`,
     `Email: ${email}`,
@@ -251,10 +272,63 @@ form.addEventListener("submit", (event) => {
     message
   ].join("\n");
 
-  note.textContent = lang === "en" ? en.sent : daMail.sent;
+  note.textContent = phrase("sent", lang === "en" ? en.sent : daMail.sent);
   window.location.href = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 });
 
+function applyContent() {
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
+    const value = content.text[el.dataset.i18n];
+    if (!value) return;
+    el.dataset.da = value.da;
+    el.dataset.en = value.en;
+  });
+  document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
+    const value = content.text[el.dataset.i18nPlaceholder];
+    if (!value) return;
+    el.dataset.daPlaceholder = value.da;
+    el.dataset.enPlaceholder = value.en;
+  });
+  const assignImage = (selector, image) => {
+    const img = document.querySelector(selector);
+    img.src = image.src;
+    img.dataset.da = image.alt.da;
+    img.dataset.en = image.alt.en;
+    if (image.w) img.width = image.w;
+    if (image.h) img.height = image.h;
+  };
+  assignImage(".hero-img", content.hero);
+  assignImage(".about img", content.aboutImage);
+  assignImage(".break img", content.breakImage);
+  const mail = document.querySelector("#contact-email");
+  mail.href = `mailto:${content.email}`;
+  mail.textContent = content.email;
+  document.querySelector("[data-i18n='footer.archive']").href = content.pexels;
+  document.querySelector(".gallery").innerHTML = content.photos.map((photo) => `
+    <figure data-cat="${esc(photo.cat)}">
+      <button class="shot" type="button">
+        <img src="${esc(photo.src)}" alt="${esc(photo.alt.da)}" ${photo.w ? `width="${Number(photo.w)}"` : ""} ${photo.h ? `height="${Number(photo.h)}"` : ""} loading="lazy" data-da="${esc(photo.alt.da)}" data-en="${esc(photo.alt.en)}" />
+      </button>
+      <figcaption>
+        <span class="cap-label" data-da="${esc(photo.caption.da)}" data-en="${esc(photo.caption.en)}">${esc(photo.caption.da)}</span>
+        <span>${esc(photo.place)}</span>
+      </figcaption>
+    </figure>`).join("");
+}
+
+async function loadContent() {
+  try {
+    const response = await fetch("content/site.json", { cache: "no-cache" });
+    if (response.ok) {
+      content = await response.json();
+      applyContent();
+    }
+  } catch (error) {
+    content = null;
+  }
+  applyLang(lang);
+  onScroll();
+}
+
 window.addEventListener("scroll", onScroll, { passive: true });
-onScroll();
-applyLang(lang);
+loadContent();

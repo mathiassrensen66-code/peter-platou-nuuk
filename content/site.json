@@ -1,0 +1,639 @@
+{
+  "email": "kontakt@peterplatou.gl",
+  "pexels": "https://www.pexels.com/@thebigplanet/",
+  "hero": {
+    "src": "images/32691039.jpg",
+    "w": 4700,
+    "h": 3133,
+    "alt": {
+      "da": "Gul båd mellem klipper på kysten ved Nuuk",
+      "en": "Yellow boat between rocks on the coast of Nuuk"
+    }
+  },
+  "aboutImage": {
+    "src": "images/37150661.jpg",
+    "w": 2983,
+    "h": 1678,
+    "alt": {
+      "da": "Havørne foran sneklædte fjelde ved Nuuk",
+      "en": "White-tailed eagles in front of snowy mountains near Nuuk"
+    }
+  },
+  "breakImage": {
+    "src": "images/36990934.jpg",
+    "w": 9616,
+    "h": 5409,
+    "alt": {
+      "da": "Havørn flyver over stille vand",
+      "en": "White-tailed eagle flying over calm water"
+    }
+  },
+  "text": {
+    "brand": {
+      "da": "Peter Platou",
+      "en": "Peter Platou"
+    },
+    "place": {
+      "da": "Nuuk, Grønland",
+      "en": "Nuuk, Greenland"
+    },
+    "nav.work": {
+      "da": "Arbejde",
+      "en": "Work"
+    },
+    "nav.services": {
+      "da": "Ydelser",
+      "en": "Services"
+    },
+    "nav.about": {
+      "da": "Om",
+      "en": "About"
+    },
+    "nav.contact": {
+      "da": "Kontakt",
+      "en": "Contact"
+    },
+    "nav.book": {
+      "da": "Book",
+      "en": "Book"
+    },
+    "menu": {
+      "da": "Menu",
+      "en": "Menu"
+    },
+    "hero.kicker": {
+      "da": "Fotograf i Nuuk",
+      "en": "Photographer in Nuuk"
+    },
+    "hero.lede": {
+      "da": "Landskab, portræt og familie. Jeg arbejder i Grønland, med base i Nuuk.",
+      "en": "Landscape, portrait and family. I work in Greenland, based in Nuuk."
+    },
+    "hero.work": {
+      "da": "Se arbejdet",
+      "en": "See the work"
+    },
+    "hero.book": {
+      "da": "Book en session",
+      "en": "Book a session"
+    },
+    "statement": {
+      "da": "Jeg fotograferer mennesker og steder i Grønland. Sessionerne er rolige, aftalerne er klare, og du går herfra med billeder, der er færdige at bruge.",
+      "en": "I photograph people and places in Greenland. Sessions are unhurried, the agreement is clear, and you leave with pictures that are ready to use."
+    },
+    "fact.base": {
+      "da": "Base",
+      "en": "Base"
+    },
+    "fact.workLabel": {
+      "da": "Arbejde",
+      "en": "Work"
+    },
+    "fact.work": {
+      "da": "Portræt til landskab",
+      "en": "Portrait to landscape"
+    },
+    "fact.archive": {
+      "da": "Arkiv",
+      "en": "Archive"
+    },
+    "fact.views": {
+      "da": "Set over 7 mio. gange",
+      "en": "Seen over 7 million times"
+    },
+    "work.title": {
+      "da": "Udvalgt arbejde",
+      "en": "Selected work"
+    },
+    "filter.all": {
+      "da": "Alle",
+      "en": "All"
+    },
+    "filter.portrait": {
+      "da": "Portræt",
+      "en": "Portrait"
+    },
+    "filter.family": {
+      "da": "Familie",
+      "en": "Family"
+    },
+    "filter.nature": {
+      "da": "Natur",
+      "en": "Nature"
+    },
+    "filter.nuuk": {
+      "da": "Nuuk",
+      "en": "Nuuk"
+    },
+    "cap.break": {
+      "da": "Havørn over vandet. Nuuk.",
+      "en": "White-tailed eagle over the water. Nuuk."
+    },
+    "services.kicker": {
+      "da": "Til kunder",
+      "en": "For clients"
+    },
+    "services.title": {
+      "da": "Det jeg fotograferer",
+      "en": "What I photograph"
+    },
+    "svc.portrait": {
+      "da": "Portræt",
+      "en": "Portrait"
+    },
+    "svc.portraitBody": {
+      "da": "Enkeltpersoner, par og billeder til arbejde. Vi finder et roligt sted i Nuuk, og du får fotografier, der ligner dig.",
+      "en": "Individuals, couples and pictures for work. We find a quiet place in Nuuk, and you get photographs that look like you."
+    },
+    "svc.family": {
+      "da": "Familie",
+      "en": "Family"
+    },
+    "svc.familyBody": {
+      "da": "Hjemme, ude eller med den mindste. Jeg arbejder stille, så øjeblikket kan være, som det er.",
+      "en": "At home, outside, or with a newborn. I work quietly, so the moment can stay as it is."
+    },
+    "svc.nature": {
+      "da": "Landskab og natur",
+      "en": "Landscape and nature"
+    },
+    "svc.natureBody": {
+      "da": "Kyst, fjelde, fugle og årstidernes lys. Til print, til dig selv, eller til en opgave.",
+      "en": "Coast, mountains, birds and the light of the season. For print, for yourself, or for a commission."
+    },
+    "svc.business": {
+      "da": "Erhverv",
+      "en": "Business"
+    },
+    "svc.businessBody": {
+      "da": "Portrætter, arbejdspladser og små begivenheder for virksomheder i Nuuk. En klar aftale, og filer der er klar til brug.",
+      "en": "Portraits, workplaces and small events for companies in Nuuk. A clear brief, and files ready to publish."
+    },
+    "step.1": {
+      "da": "Skriv",
+      "en": "Write"
+    },
+    "step.1b": {
+      "da": "Fortæl kort hvad du skal bruge, og cirka hvornår.",
+      "en": "Tell me what you need, and roughly when."
+    },
+    "step.2": {
+      "da": "Aftale",
+      "en": "Plan"
+    },
+    "step.2b": {
+      "da": "Vi finder sted, lys og hvor lang tid der skal bruges.",
+      "en": "We choose place, light and how long we need."
+    },
+    "step.3": {
+      "da": "Optagelse",
+      "en": "Session"
+    },
+    "step.3b": {
+      "da": "Roligt tempo. Ikke mere instruktion, end billedet har brug for.",
+      "en": "A calm pace. No more direction than the picture needs."
+    },
+    "step.4": {
+      "da": "Levering",
+      "en": "Delivery"
+    },
+    "step.4b": {
+      "da": "Et redigeret sæt, klar til print og deling.",
+      "en": "An edited set, ready for print and sharing."
+    },
+    "about.kicker": {
+      "da": "Fotografen",
+      "en": "The photographer"
+    },
+    "about.title": {
+      "da": "Base i Nuuk",
+      "en": "Based in Nuuk"
+    },
+    "about.1": {
+      "da": "Jeg hedder Peter Platou. Jeg bor i Nuuk og fotograferer det, der er tæt på: mennesker, familier, havørne og kysten.",
+      "en": "My name is Peter Platou. I live in Nuuk and photograph what is close: people, families, white-tailed eagles and the coast."
+    },
+    "about.2": {
+      "da": "Billederne på siden er et udvalg. Det samme blik tager jeg med til en opgave. Prisen følger tiden, stedet og hvad billederne skal bruges til.",
+      "en": "The pictures on this page are a selection. The same eye is what I bring to a commission. Price follows the time, the place and what the pictures are for."
+    },
+    "contact.kicker": {
+      "da": "Booking",
+      "en": "Booking"
+    },
+    "contact.title": {
+      "da": "Skriv til mig",
+      "en": "Write to me"
+    },
+    "contact.lead": {
+      "da": "Til en session, et print, eller et billede du vil bruge. Formularen åbner i din mail, så beskeden kommer direkte fra dig.",
+      "en": "For a session, a print, or a picture you want to license. The form opens in your email, so the message comes straight from you."
+    },
+    "contact.place": {
+      "da": "Sessioner efter aftale",
+      "en": "Sessions by arrangement"
+    },
+    "form.name": {
+      "da": "Navn",
+      "en": "Name"
+    },
+    "form.email": {
+      "da": "E-mail",
+      "en": "Email"
+    },
+    "form.phone": {
+      "da": "Telefon, valgfri",
+      "en": "Phone, optional"
+    },
+    "form.service": {
+      "da": "Hvad drejer det sig om?",
+      "en": "What do you need?"
+    },
+    "form.when": {
+      "da": "Hvornår, valgfri",
+      "en": "When, optional"
+    },
+    "form.message": {
+      "da": "Besked",
+      "en": "Message"
+    },
+    "form.send": {
+      "da": "Send forespørgsel",
+      "en": "Send inquiry"
+    },
+    "opt.choose": {
+      "da": "Vælg",
+      "en": "Choose"
+    },
+    "opt.portrait": {
+      "da": "Portræt",
+      "en": "Portrait"
+    },
+    "opt.family": {
+      "da": "Familie",
+      "en": "Family"
+    },
+    "opt.nature": {
+      "da": "Landskab / natur",
+      "en": "Landscape / nature"
+    },
+    "opt.business": {
+      "da": "Erhverv",
+      "en": "Business"
+    },
+    "opt.event": {
+      "da": "Begivenhed",
+      "en": "Event"
+    },
+    "opt.other": {
+      "da": "Noget andet",
+      "en": "Something else"
+    },
+    "ph.when": {
+      "da": "En periode eller en dato",
+      "en": "A period or a date"
+    },
+    "ph.message": {
+      "da": "Sted, hvor mange I er, og hvad billederne skal bruges til.",
+      "en": "Place, how many people, and what the pictures should be used for."
+    },
+    "err.required": {
+      "da": "Skriv navn, e-mail og en kort besked.",
+      "en": "Please add your name, email and a short message."
+    },
+    "err.email": {
+      "da": "E-mailadressen ser ufuldstændig ud.",
+      "en": "The email address looks incomplete."
+    },
+    "sent": {
+      "da": "Din mail åbner med beskeden. Send den, så vender jeg tilbage.",
+      "en": "Your email app should open with the message. Send it, and I will reply."
+    },
+    "mail.subject": {
+      "da": "Forespørgsel til Peter Platou",
+      "en": "Inquiry for Peter Platou"
+    },
+    "lb.close": {
+      "da": "Luk",
+      "en": "Close"
+    },
+    "lb.prev": {
+      "da": "Forrige",
+      "en": "Previous"
+    },
+    "lb.next": {
+      "da": "Næste",
+      "en": "Next"
+    },
+    "footer": {
+      "da": "Fotograf i Nuuk, Grønland",
+      "en": "Photographer in Nuuk, Greenland"
+    },
+    "footer.archive": {
+      "da": "Arkiv på Pexels",
+      "en": "Archive on Pexels"
+    }
+  },
+  "photos": [
+    {
+      "src": "images/35291736.jpg",
+      "w": 3996,
+      "h": 3996,
+      "cat": "portraet",
+      "place": "Nuuk",
+      "alt": {
+        "da": "Mand i vinterjakke ser op i koldt lys",
+        "en": "Man in a winter jacket looking up in cold light"
+      },
+      "caption": {
+        "da": "Vinterportræt",
+        "en": "Winter portrait"
+      }
+    },
+    {
+      "src": "images/37150661.jpg",
+      "w": 2983,
+      "h": 1678,
+      "cat": "natur",
+      "place": "Nuuk",
+      "alt": {
+        "da": "To havørne foran sneklædte fjelde",
+        "en": "Two white-tailed eagles in front of snowy mountains"
+      },
+      "caption": {
+        "da": "To havørne",
+        "en": "Two white-tailed eagles"
+      }
+    },
+    {
+      "src": "images/35499370.jpg",
+      "w": 4000,
+      "h": 6000,
+      "cat": "portraet",
+      "place": "Nuuk",
+      "alt": {
+        "da": "Portræt af kvinde i mørk uld, varmt lys",
+        "en": "Portrait of a woman in dark wool, warm light"
+      },
+      "caption": {
+        "da": "Portræt",
+        "en": "Portrait"
+      }
+    },
+    {
+      "src": "images/32691039.jpg",
+      "w": 4700,
+      "h": 3133,
+      "cat": "nuuk",
+      "place": "Nuuk",
+      "alt": {
+        "da": "Gul båd sejler mellem klipper ved Nuuk",
+        "en": "Yellow boat sailing between rocks near Nuuk"
+      },
+      "caption": {
+        "da": "Kysten",
+        "en": "The coast"
+      }
+    },
+    {
+      "src": "images/39240665.jpg",
+      "w": 2946,
+      "h": 4419,
+      "cat": "familie",
+      "place": "Nuuk",
+      "alt": {
+        "da": "Far sidder med sit barn på skødet",
+        "en": "Father sitting with his child"
+      },
+      "caption": {
+        "da": "Far og barn",
+        "en": "Father and child"
+      }
+    },
+    {
+      "src": "images/39452802.jpg",
+      "w": 2953,
+      "h": 1661,
+      "cat": "natur",
+      "place": "Nuuk",
+      "alt": {
+        "da": "Havørn flyver lavt over havet",
+        "en": "White-tailed eagle flying low over the sea"
+      },
+      "caption": {
+        "da": "Over havet",
+        "en": "Over the sea"
+      }
+    },
+    {
+      "src": "images/35689887.jpg",
+      "w": 4000,
+      "h": 4000,
+      "cat": "portraet",
+      "place": "Nuuk",
+      "alt": {
+        "da": "Portræt i aftenlys, kvinde i mørk bluse",
+        "en": "Evening-light portrait of a woman in a dark top"
+      },
+      "caption": {
+        "da": "Aftenlys",
+        "en": "Evening light"
+      }
+    },
+    {
+      "src": "images/35713547.jpg",
+      "w": 4000,
+      "h": 6000,
+      "cat": "nuuk",
+      "place": "Nuuk",
+      "alt": {
+        "da": "Person svøbt i Grønlands flag på en sneklædt gade i Nuuk",
+        "en": "Person wrapped in the Greenland flag on a snowy street in Nuuk"
+      },
+      "caption": {
+        "da": "Vintergade",
+        "en": "Winter street"
+      }
+    },
+    {
+      "src": "images/39607619.jpg",
+      "w": 7008,
+      "h": 3942,
+      "cat": "familie",
+      "place": "Nuuk",
+      "alt": {
+        "da": "Mor kysser sit barn på kinden",
+        "en": "Mother kissing her child on the cheek"
+      },
+      "caption": {
+        "da": "Mor og barn",
+        "en": "Mother and child"
+      }
+    },
+    {
+      "src": "images/37213515.jpg",
+      "w": 4230,
+      "h": 2820,
+      "cat": "natur",
+      "place": "Nuuk",
+      "alt": {
+        "da": "Nærbillede af en havørn i profil",
+        "en": "Close profile of a white-tailed eagle"
+      },
+      "caption": {
+        "da": "Nærbillede",
+        "en": "Close study"
+      }
+    },
+    {
+      "src": "images/39866768.jpg",
+      "w": 5928,
+      "h": 3334,
+      "cat": "familie",
+      "place": "Nuuk",
+      "alt": {
+        "da": "Barn ligger på maven på en seng og ser op",
+        "en": "Baby lying on a bed and looking up"
+      },
+      "caption": {
+        "da": "Hjemme",
+        "en": "At home"
+      }
+    },
+    {
+      "src": "images/32655135.jpg",
+      "w": 3528,
+      "h": 5292,
+      "cat": "nuuk",
+      "place": "Nuuk",
+      "alt": {
+        "da": "Løber på en bane med røde huse i Nuuk bagved",
+        "en": "Runner on a track with red houses in Nuuk behind"
+      },
+      "caption": {
+        "da": "I bevægelse",
+        "en": "In motion"
+      }
+    },
+    {
+      "src": "images/35490806.jpg",
+      "w": 4000,
+      "h": 4000,
+      "cat": "portraet",
+      "place": "Nuuk",
+      "alt": {
+        "da": "Sort-hvidt portræt af en smilende mand med briller",
+        "en": "Black and white portrait of a smiling man with glasses"
+      },
+      "caption": {
+        "da": "Sort-hvid",
+        "en": "Black and white"
+      }
+    },
+    {
+      "src": "images/39110099.jpg",
+      "w": 3166,
+      "h": 1781,
+      "cat": "natur",
+      "place": "Nuuk",
+      "alt": {
+        "da": "Snespurv står på en klippe med et frø i næbbet",
+        "en": "Snow bunting on a rock with a seed in its beak"
+      },
+      "caption": {
+        "da": "Snespurv",
+        "en": "Snow bunting"
+      }
+    },
+    {
+      "src": "images/37389146.jpg",
+      "w": 6000,
+      "h": 4000,
+      "cat": "portraet",
+      "place": "Nuuk",
+      "alt": {
+        "da": "Kvinde sidder i en café og kigger ud i lyset",
+        "en": "Woman sitting in a café, looking into the light"
+      },
+      "caption": {
+        "da": "I caféen",
+        "en": "In the café"
+      }
+    },
+    {
+      "src": "images/35713618.jpg",
+      "w": 2909,
+      "h": 4364,
+      "cat": "natur",
+      "place": "Nuuk",
+      "alt": {
+        "da": "Våd husky står på iset underlag",
+        "en": "Wet husky standing on ice"
+      },
+      "caption": {
+        "da": "På isen",
+        "en": "On the ice"
+      }
+    },
+    {
+      "src": "images/39628118.jpg",
+      "w": 7008,
+      "h": 4672,
+      "cat": "portraet",
+      "place": "Nuuk",
+      "alt": {
+        "da": "Nærbillede af en mand i grøn trøje",
+        "en": "Close portrait of a man in a green sweater"
+      },
+      "caption": {
+        "da": "Portræt",
+        "en": "Portrait"
+      }
+    },
+    {
+      "src": "images/37017310.jpg",
+      "w": 2946,
+      "h": 2039,
+      "cat": "natur",
+      "place": "Nuuk",
+      "alt": {
+        "da": "Ravn flyver over blåt vand",
+        "en": "Raven flying over blue water"
+      },
+      "caption": {
+        "da": "Ravn",
+        "en": "Raven"
+      }
+    },
+    {
+      "src": "images/39452749.jpg",
+      "w": 6520,
+      "h": 3667,
+      "cat": "portraet",
+      "place": "Nuuk",
+      "alt": {
+        "da": "Kvinde i gråt cardigan sidder i sommergrønt",
+        "en": "Woman in a grey cardigan sitting in summer greenery"
+      },
+      "caption": {
+        "da": "Sommerlys",
+        "en": "Summer light"
+      }
+    },
+    {
+      "src": "images/35336322.jpg",
+      "w": 6000,
+      "h": 4000,
+      "cat": "portraet",
+      "place": "Nuuk",
+      "alt": {
+        "da": "Kvinde i vinterjakke smiler i blå time",
+        "en": "Woman in a winter coat smiling at blue hour"
+      },
+      "caption": {
+        "da": "Blå time",
+        "en": "Blue hour"
+      }
+    }
+  ]
+}
