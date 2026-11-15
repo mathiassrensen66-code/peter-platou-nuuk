@@ -318,7 +318,8 @@ function applyContent() {
 
 async function loadContent() {
   try {
-    const response = await fetch("content/site.json", { cache: "no-cache" });
+    let response = await fetch("/api/site", { cache: "no-cache" });
+    if (response.status === 404) response = await fetch("content/site.json", { cache: "no-cache" });
     if (response.ok) {
       content = await response.json();
       applyContent();

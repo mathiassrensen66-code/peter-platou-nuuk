@@ -120,6 +120,10 @@ function renderText() {
   }
 }
 
+function imageSrc(src) {
+  return /^https?:\/\//.test(src) ? src : `../${src}`;
+}
+
 function fileButton(label, onFile) {
   const labelEl = document.createElement("label");
   labelEl.className = "file";
@@ -162,7 +166,7 @@ function slotEditor(title, key) {
   const box = document.createElement("article");
   box.className = "slot";
   const img = document.createElement("img");
-  img.src = `../${slot.src}`;
+  img.src = imageSrc(slot.src);
   img.alt = "";
   const fields = document.createElement("div");
   fields.className = "slot-fields";
@@ -189,7 +193,7 @@ function renderPhotos() {
     const card = document.createElement("article");
     card.className = "card";
     const img = document.createElement("img");
-    img.src = `../${photo.src}`;
+    img.src = imageSrc(photo.src);
     img.alt = "";
     const fields = document.createElement("div");
     fields.className = "card-fields";
